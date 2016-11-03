@@ -1,6 +1,6 @@
 {
   "name": "gitbook-start-github-rafadanipedro",
-  "version": "1.0.7",
+  "version": "2.0.0",
   "description": "Paquete de node para generar un gitbook y todo lo necesario en GitHub",
   "main": "index.js",
   "scripts": {
