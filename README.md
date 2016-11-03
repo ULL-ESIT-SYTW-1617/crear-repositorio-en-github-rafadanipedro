@@ -1,4 +1,12 @@
 # Práctica: GitHub API, Heroku API y SSH en JavaScript. Práctica 6 de SYTW
+En esta práctica trabajaremos sobre los anteriores paquetes en los que deplegábamos un Gitbook en Heroku e IAAS.
+En este caso, se nos pide crear un plugin para desplegar en Github que, utilizando la API de Github, sea capaz de crear un repositorio y publicarlo.
+
+* **[Heroku API](https://github.com/ULL-ESIT-SYTW-1617/gitbook-start-heroku-rafadanipedro)**
+* **[Heroku API plugin](https://github.com/ULL-ESIT-SYTW-1617/practica-plugins-heroku-rafadanipedro)**
+
+* **[SSH en JavaScript](https://github.com/ULL-ESIT-SYTW-1617/gitbook-start-iaas-ull-es-rafadanipedro)**
+* **[SSH en JavaScript plugin](https://github.com/ULL-ESIT-SYTW-1617/nueva-funcionalidad-para-el-paquete-npm-plugins-rafadanipedro)**
 
 ## Descripción de la práctica
  * [Gitbook de la práctica](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/practicas/practicagithubapi.html)
