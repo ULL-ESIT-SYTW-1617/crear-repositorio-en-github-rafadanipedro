@@ -11,21 +11,7 @@ export default async function generateGitbook (nombrelibro) {
 
 function gitbookSpawn(...params) {
   return new Promise((res, rej) => {
-
-    let production
-    try {
-      production = !process.execArgv[0].match(/babel-cli/)
-    } catch (err) {
-      production = true
-    }
-
-    let gitbookRuta
-
-    if (production) {
-      gitbookRuta = path.resolve(__dirname, '../../..', 'gitbook-cli/bin/gitbook.js')
-    } else {
-      gitbookRuta = path.resolve(__dirname, '../..', 'node_modules/gitbook-cli/bin/gitbook.js')
-    }
+    let gitbookRuta = path.resolve(__dirname, '../..', 'node_modules/gitbook-cli/bin/gitbook.js')
 
     console.log(`Llamando a gitbook-cli desde ${gitbookRuta}`)
 
