@@ -1,4 +1,7 @@
 # Práctica: GitHub API, Heroku API y SSH en JavaScript. Práctica 6 de SYTW
+
+![Version NPM](https://img.shields.io/npm/v/gitbook-start-github-rafadanipedro.svg)
+
 En esta práctica trabajaremos sobre los anteriores paquetes en los que deplegábamos un Gitbook en Heroku e IAAS.
 En este caso, se nos pide crear un plugin para desplegar en Github que, utilizando la API de Github, sea capaz de crear un repositorio y publicarlo.
 
