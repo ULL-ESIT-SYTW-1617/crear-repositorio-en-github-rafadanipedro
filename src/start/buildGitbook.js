@@ -11,6 +11,8 @@ export default async function generateGitbook (nombrelibro) {
 
 function gitbookSpawn(...params) {
   return new Promise((res, rej) => {
+    console.log('Llamando a gitbook-cli desde')
+    console.log(path.resolve(__dirname, '../..', 'node_modules/gitbook-cli/bin/gitbook.js'))
     const gb = spawn('node', [
       path.resolve(__dirname, '../..', 'node_modules/gitbook-cli/bin/gitbook.js'),
       ...params
