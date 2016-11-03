@@ -1,17 +1,14 @@
 import minimist from 'minimist'
 import fs from 'fs-promise'
-import Gitbook from './gitbookStart'
+import createGitbook, { ghClient, getGHUsername } from './start'
 import path from 'path'
 import nombre from 'git-user-name'
 import email from 'git-user-email'
-import GHUsername from './githubUsername'
 import deploy from './deploy'
 
 (async () => {
   const argv = minimist(process.argv.slice(2))
   let conf = require('../package.json')
-
-  const ghUsername = await GHUsername()
 
   if (argv.d || argv.deploy) return deploy(argv.d || argv.deploy, argv)
 
@@ -40,10 +37,12 @@ import deploy from './deploy'
         process.exit(1)
       }
 
+      const ghUsername = await getGHUsername(await ghClient())
+
       let nombreLibro = argv._[0]
       let options = {
-        author: nombre(),
-        email: email(),
+        author: nombre() || 'TODO: poner tu nombre',
+        email: email() || 'TODO: poner tu correo',
         license: 'MIT',
         repo: `http://github.com/${ghUsername}/${nombreLibro}`,
         ghPages: `http://${ghUsername}.github.io/${nombreLibro}`,
@@ -51,9 +50,13 @@ import deploy from './deploy'
         title: nombreLibro,
         description: 'Descripción breve del Gitbook',
         outputDirName: nombreLibro,
+        username: ghUsername,
         ...argv
       }
-      let gitbook = new Gitbook(options)
-      gitbook.write().catch(err => console.error(`ERROR: ${err.message}`))
+      try {
+        await createGitbook(options)
+      } catch(err) {
+        console.error(err)
+      }
   }
-})()
+})().catch(console.error)
