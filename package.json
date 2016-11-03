@@ -1,0 +1,66 @@
+{
+  "name": "gitbook-start-github-rafadanipedro",
+  "version": "0.0.1",
+  "description": "Paquete de node para generar un gitbook y todo lo necesario en GitHub",
+  "main": "index.js",
+  "scripts": {
+    "exec": "babel-node bin/cli.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel -d dist/ src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ULL-ESIT-SYTW-1617/crear-repositorio-en-github-rafadanipedro.git"
+  },
+  "keywords": [
+    "paquete",
+    "node",
+    "gitbook"
+  ],
+  "author": {
+    "name": "rafadanipedro"
+  },
+  "contributors": [
+    {
+      "name": "Rafael Herrero"
+    },
+    {
+      "name": "Daniel Ramos"
+    },
+    {
+      "name": "Pedro Ramos"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ULL-ESIT-SYTW-1617/crear-repositorio-en-github-rafadanipedro/issues"
+  },
+  "homepage": "https://github.com/ULL-ESIT-SYTW-1617/crear-repositorio-en-github-rafadanipedro#readme",
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "bin": {
+    "gitbook-start": "./bin/cli.js"
+  },
+  "man": "./man/gitbook-start-rafadanipedro.1",
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-eslint": "^7.0.0",
+    "babel-preset-es2015": "6.16.0",
+    "babel-preset-stage-0": "6.16.0",
+    "babel-register": "6.16.0",
+    "gulp": "3.9.1",
+    "gulp-clean": "0.3.2",
+    "gulp-standard": "^8.0.2"
+  },
+  "dependencies": {
+    "babel-polyfill": "6.16.0",
+    "ejs": "^2.5.2",
+    "fs-promise": "0.5.0",
+    "git-user-email": "^0.2.1",
+    "git-user-name": "^1.2.0",
+    "minimist": "^1.2.0",
+    "npm": "^3.10.8",
+    "npmi": "^2.0.1"
+  }
+}
