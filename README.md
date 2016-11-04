@@ -11,6 +11,15 @@ En este caso, se nos pide crear un plugin para desplegar en Github que, utilizan
 * **[SSH en JavaScript](https://github.com/ULL-ESIT-SYTW-1617/gitbook-start-iaas-ull-es-rafadanipedro)**
 * **[SSH en JavaScript plugin](https://github.com/ULL-ESIT-SYTW-1617/nueva-funcionalidad-para-el-paquete-npm-plugins-rafadanipedro)**
 
+## Funcionamiento paquete
+
+Para esta práctica hemos creado un nuevo paquete, disponible en el [siguiente enlace](https://www.npmjs.com/package/gitbook-start-github-rafadanipedro).
+
+Lo primero, debemos de instalar dicho paquete de manera global, ejecutando el siguiente comando: `npm i -g gitbook-start-github-rafadanipedro`. Una vez instalado, simplemente ejecutamos `gitbook-start <nombreLibro>`, lo que nos creará la estructura del libro. A continuación, se nos pedirá por pantalla el nombre de usuario y la contraseña (de manera oculta) de GitHub para obtener el token de nuestro perfil y así poder crear un repositorio al que subir el libro de manera totalmente automática y transparente para el cliente.
+
+Las opciones que puede recibir el paquete son: 
+
+
 ## Descripción de la práctica
  * [Gitbook de la práctica](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/practicas/practicagithubapi.html)
 
