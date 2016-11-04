@@ -27,8 +27,12 @@ Las opciones que puede recibir el paquete son:
  `--name`: especifica el nombre del libro. Por defecto este argumento es obligatorio.  
  `--title`: especifica el titulo del libro. Por defecto es el mismo que el nombre del libro.  
  `--description`: especifica la descripcion del libro. Por defecto es "Descripcion breve del Gitbook".  
- `--outputDirName`: nombre del directorio a crear. Por defecto es el nombre del libro.
+ `--outputDirName`: nombre del directorio a crear. Por defecto es el nombre del libro.  
  `-d o --deploy `: despliega el libro en el plugin que le indique
+ 
+ Es obligatorio especificar un nombre para el libro, ya que es el único argumento obligatorio.
+ 
+ Ejemplo: `gitbook-start mi_libro --author Joselito --email joselito@chuchu.com`
 
 ## Descripción de la práctica
  * [Gitbook de la práctica](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/practicas/practicagithubapi.html)
