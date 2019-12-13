@@ -63,7 +63,7 @@
     "gitbook-cli": "^2.3.0",
     "inquirer": "^1.2.2",
     "minimist": "^1.2.0",
-    "npm": "^3.10.8",
+    "npm": "^6.13.4",
     "npmi": "^2.0.1",
     "octonode": "^0.7.6",
     "simple-git": "^1.59.0"
